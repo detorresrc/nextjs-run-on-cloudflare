@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+
+export const runtime = "edge";
 
 export default function Home() {
   return (
@@ -95,6 +98,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+
+        <Link href="/dashboard">Dashboard</Link>
       </footer>
     </div>
   );
